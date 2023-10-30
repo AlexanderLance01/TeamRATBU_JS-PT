@@ -1,5 +1,9 @@
 # TeamRATBU_JS-PT
 
-Arian Dave Abat - Frazcier
-Gian Karlo Becera - Sh1nyui123123
-Julius Vergil Bilalat - pabuhat69
+<ul>
+  <li>Arian Dave Abat - Frazcier</li>
+  <li>Gian Karlo Becera - Sh1nyui123123</li>
+  <li>Julius Vergil Bilalat - pabuhat69</li>
+</ul>
+
+
