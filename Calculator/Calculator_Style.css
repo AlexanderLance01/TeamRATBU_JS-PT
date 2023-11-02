@@ -1,96 +1,96 @@
-/* Container */
-.calendar {
-    width: 100%;
-    max-width: 300px; 
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #fff, #ddd);
+}
+ /* Container */
+.calculator {
+  background: linear-gradient(to bottom, #555, #333);
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+ /* Screen */
+#display {
+  width: 95%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  background: #222;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+}
+ /* Buttons and Actions  */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: #5c4a4a;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover {
+  background: #444;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+button.operator {
+  background: #ff9900;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
+button.operator:hover {
+  background: #cc7700;
+}
+
+
+button.equals {
+  background: #007acc;
+  box-shadow: 0 0 10px rgba(0, 120, 204, 0.7);
+}
+
+button.equals:hover {
+  background: #000;
+}
+
+
+button.clear {
+  background: #000;
+  box-shadow: 0 0 10px rgba(21, 18, 18, 0.8);
+}
+
+button.clear:hover {
+  background: #100b0b;
+}
+/* pano ba ito */
+@media (max-width: 760px) {
+  .calculator {
+    width: 80%; 
   }
-  
-  /* head ng calandar */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px; 
-  }
-  
-  /* 'Previous' at Next Buttons */
-  #prevMonth, #nextMonth {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px; 
-  }
-  
-  /* Month at year */
-  #monthYear {
+
+  button {
     font-size: 16px; 
   }
-  
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  /* head ng table  */
-  thead th {
-    background-color: #333;
-    color: #fff;
-    padding: 5px; 
-  }
-  
-  /* Calendar cells */
-  td {
-    text-align: center;
-    padding: 5px; 
-    font-size: 14px; 
-  }
-  
-  /* Style ng selected date */
-  td.selected {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  /* Style ng todays date */
-  td.today {
-    background-color: #f9a825;
-  }
-  
-  /* Style ng past dates */
-  td.past {
-    color: #ccc;
-  }
-  
-  /* Style ng event dates */
-  td.event {
-    background-color: #ffc107;
-    color: #333;
-  }
-  
-  /* Hover ng table cells */
-  td:hover {
-    background-color: #ddd;
-  }
-  
-  .event {
-    font-weight: bold;
-    color: red;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .calendar {
-      max-width: 100%; 
-    }
-    
-  }
-  
+}
