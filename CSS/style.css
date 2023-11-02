@@ -644,7 +644,7 @@ h3.profession .typekita {
 
 .projects .projects-content .card {
     position: relative;
-    background: #fff;
+    background: var(--bg-black-100);
     border-radius: 20px;
     border: 1px solid var(--main-color);
     width: 300px;
@@ -675,7 +675,7 @@ h3.profession .typekita {
     height: 140px;
     width: 140px;
     border-radius: 10px;
-    padding: 3px;
+    padding: 6px;
     background: var(--main-color);
     transition: all 0.3s ease;
 }
@@ -685,17 +685,15 @@ h3.profession .typekita {
     width: 100%;
     object-fit: scale-down;
     border-radius: 10px;
-    border: 3px solid #fff;
-}
-
-.projects .projects-content .image:hover {
-    transform: scale(1.07);
+    border: 3px solid var(--bg-black-100);
+    transition: all 0.3s ease;
 }
 
 .projects .projects-content .card .project-name {
     align-items: center;
     margin-top: 10px;
     color: var(--text-black-900);
+    transition: all 0.3s ease;
 }
 
 .projects .projects-content .card .project-name .name {
@@ -707,16 +705,16 @@ h3.profession .typekita {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .projects .projects-content .card .button button a {
     text-decoration: none;
-    color: var(--text-black-900);
+    color: #fff;
 }
 
 .projects .projects-content .card .button button {
-    background: var(--bg-black-900);
+    background: var(--main-color);
     outline: none;
     border: none;
     padding: 8px 22px;
@@ -728,7 +726,7 @@ h3.profession .typekita {
 
 .projects .projects-content .card .button button:hover {
     background: var(--main-dark-color);
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 
