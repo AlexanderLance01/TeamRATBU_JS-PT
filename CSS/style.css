@@ -414,6 +414,10 @@ h3.profession .typekita {
 
 
 /* ABOUT SECTION */
+.about::-webkit-scrollbar {
+    display: none;
+}
+
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
