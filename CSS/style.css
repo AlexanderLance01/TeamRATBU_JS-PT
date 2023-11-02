@@ -92,7 +92,7 @@ ul {
 .section-title h2::before {
     content: '';
     height: 4px;
-    width: 60px;
+    width: 80px;
     background-color: var(--main-color);
     border-radius: 4px;
     position: absolute;
@@ -104,7 +104,7 @@ ul {
 .section-title h2::after {
     content: '';
     height: 4px;
-    width: 25px;
+    width: 50px;
     background-color: var(--main-color);
     border-radius: 4px;
     position: absolute;
@@ -531,22 +531,6 @@ h3.profession .typekita {
     max-width: 100%;
 }
 
-/* .team .btn {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 8px 15px;
-    color: white;
-    border-radius: 40px;
-    display: inline-block;
-    background: var(--main-color);
-    transition: all 0.3s ease;
-}
-
-.team .btn:hover {
-    transform: scale(1.05);
-    background: var(--main-dark-color);
-} */
-
 .team .team-content .image {
     height: 140px;
     width: 140px;
@@ -562,6 +546,12 @@ h3.profession .typekita {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #fff;
+}
+
+.team .team-content .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .team .team-content .card {
@@ -637,37 +627,107 @@ h3.profession .typekita {
     font-weight: 500;
 }
 
-.team .team-content .card .button {
+
+
+/* PROJECTS SECTION */
+.projects .projects-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.projects .projects-content .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .projects-content .card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    width: 300px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.projects .projects-content .card:before {
+    content: '';
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: var(--main-color);
+    border-radius: 15px 15px 0 0;
+    transition: all 0.3s ease;
+}
+
+.projects .projects-content .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.projects .projects-content .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+    padding: 3px;
+    background: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.projects .projects-content .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.projects .projects-content .image:hover {
+    transform: scale(1.07);
+}
+
+.projects .projects-content .card .project-name {
+    align-items: center;
+    margin-top: 10px;
+    color: var(--text-black-900);
+}
+
+.projects .projects-content .card .project-name .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.projects .projects-content .card .button {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.team .team-content .card .button button a {
+.projects .projects-content .card .button button a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-black-900);
 }
 
-.team .team-content .card .button button {
-    background: var(--main-color);
+.projects .projects-content .card .button button {
+    background: var(--bg-black-900);
     outline: none;
     border: none;
     padding: 8px 22px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.team .team-content .card .button button:hover {
+.projects .projects-content .card .button button:hover {
     background: var(--main-dark-color);
-}
-
-.team .team-content .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transform: scale(1.05);
 }
 
 
