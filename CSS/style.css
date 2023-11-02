@@ -266,17 +266,17 @@ ul {
 }
 
 .side-bar .nav {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .side-bar .nav li {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .side-bar .nav li a {
     font-size: 16px;
     font-weight: 600;
-    border-bottom: 1px solid var(--bg-black-50);
+    border-bottom: 2px solid var(--bg-black-50);
     color: var(--text-black-900);
     padding: 5px 15px;
     transition: all 0.3s ease;
@@ -531,27 +531,11 @@ h3.profession .typekita {
     max-width: 100%;
 }
 
-.team .team-content .image {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    padding: 3px;
-    background: var(--main-color);
-    transition: all 0.3s ease;
-}
-
-.team .team-content .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #fff;
-}
-
 .team .team-content .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .team .team-content .card {
@@ -581,6 +565,23 @@ h3.profession .typekita {
     padding: 30px;
     position: relative;
     z-index: 10;
+}
+
+.team .team-content .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.team .team-content .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
 .team .team-content .card .icons {
@@ -733,7 +734,7 @@ h3.profession .typekita {
 
 
 /* RESPONSIVE */
-@media (max-width:1199px) {
+@media (max-width:1200px) {
 
     .section .container {
         padding-top: 30px;
@@ -774,6 +775,15 @@ h3.profession .typekita {
         margin-left: 0;
         padding-left: 0;
     }
+    
+    .team .team-content .card {
+        height: 300px;
+    }
+
+    .team .team-content .card .name-dreamjob .name {
+        text-align: center;
+    }
+
 
 }
 
@@ -801,5 +811,13 @@ h3.profession .typekita {
     .about .about-content .about-text-3 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .team .team-content .wrapper {
+        flex-direction: column;
+    }
+
+    .projects .projects-content .wrapper {
+        flex-direction: column;
     }
 }
