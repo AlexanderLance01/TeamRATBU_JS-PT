@@ -304,17 +304,15 @@ ul {
     transition: all 0.3s ease;
 }
 
-/*.home .btn {
-    background: var(--bg-black-900);
+.home .btn {
+    background: var(--main-color);
     font-size: 18px;
     font-weight: 500;
     padding: 12px 36px;
-    color: var(--main-color);
+    color: #fff;
     border-radius: 40px;
     border-color: var(--main-color);
-    border: var(--main-color) solid 2px;
     display: inline-block;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -326,7 +324,7 @@ ul {
 
 .home .btn:active {
     opacity: 0.7;
-} */
+}
 
 .home .home-info {
     flex: 0 0 60%;
@@ -681,6 +679,189 @@ h3.profession .typekita {
 
 
 
+/* CONTACT SECTION */
+.contact .contact-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-content .contactUs {
+    position: relative;
+    width: 100%;
+}
+
+.contact .contact-content .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact .contact-content .box .contact h3{
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.contact .contact-content .box .contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTACT FORM */
+.contact .contact-content .box .form {
+    grid-area: form;
+}
+
+.contact .contact-content .box .form .formBox {
+    position: relate;
+    width: 100%;
+}
+
+.contact .contact-content .box .form .formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.contact .contact-content .box .form .formBox .inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.contact .contact-content .box .form .formBox .inputBox input {
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.contact .contact-content .box .form .formBox .inputBox textarea {
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 8px;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .box .form .formBox .inputBox input[type="submit"] {
+    background: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    max-width: 120px;
+    cursor: pointer;
+    padding: 14px 15px;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.contact .contact-content .box .form .formBox .inputBox ::placeholder {
+    color: #999;
+}
+
+.contact .contact-content .box .form .formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.contact .contact-content .box .form .formBox .inputBox span {
+    color: var(--main-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+/* CONTACT INFO */
+.contact .contact-content .box .info {
+    grid-area: info;
+}
+
+
+.contact .contact-content .box .info h3 {
+    color: var(--main-color);
+    transition: all 0.5s ease;
+}
+
+.contact .contact-content .box .info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .box .info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.5s ease;
+}
+
+.contact .contact-content .box .info .infoBox div p {
+    color: #302e4d;
+    font-size: 15px;
+}
+
+.contact .contact-content .box .info .infoBox div a {
+    text-decoration: none;
+    color: #302e4d;
+    font-size: 15px;
+}
+
+.contact .contact-content .box .info .infoBox .social-media {
+    margin-top: 40px;
+    display: flex;
+}
+
+.contact .contact-content .box .info .infoBox .social-media li {
+    margin-right: 15px;
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+
+.contact .contact-content .box .info .infoBox .social-media li {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contact .contact-content .box .info .infoBox .social-media li:hover {
+    opacity: 1;
+}
+
+/* CONTACT MAP */
+.contact .contact-content .box .map {
+    grid-area: map;
+}
+
+.contact .contact-content .box .map {
+    padding: 0;
+}
+
+.contact .contact-content .box .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /* RESPONSIVE */
 @media (max-width:1200px) {
 
@@ -749,6 +930,33 @@ h3.profession .typekita {
     .team .team-content .wrapper,
     .skills .skills-content .wrapper{
         flex-wrap: wrap;
+    }
+
+    .contactUs {
+        padding: 20px;
+    }
+    
+    .contact .contact-content .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "form"
+            "info"
+            "map";
+    }
+
+    .contact .contact-content .box .map {
+        min-height: 300px;
+    }
+
+    .contact .contact-content .box .form .formBox .inputBox {
+        width: 100%;
+    }
+
+    .contact .contact-content .box .formBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
     }
 
 }
