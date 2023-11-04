@@ -415,10 +415,6 @@ h3.profession .typekita {
 
 
 /* ABOUT SECTION */
-.about::-webkit-scrollbar {
-    display: none;
-}
-
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -680,6 +676,10 @@ h3.profession .typekita {
 
 
 /* CONTACT SECTION */
+.contact::-webkit-scrollbar {
+    display: none;
+}
+
 .contact .contact-content {
     flex: 0 0 100%;
     max-width: 100%;
