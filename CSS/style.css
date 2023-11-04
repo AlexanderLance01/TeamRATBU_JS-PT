@@ -88,6 +88,7 @@ ul {
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .section-title h2::before {
@@ -173,6 +174,7 @@ ul {
     font-size: 30px;
     letter-spacing: 3px;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .side-bar .logo a span {
@@ -485,7 +487,7 @@ h3.profession .typekita {
 
 .team .team-content .card {
     position: relative;
-    background: #fff;
+    background: var(--bg-black-100);
     border-radius: 20px;
     border: 1px solid var(--main-color);
     width: 300px;
@@ -517,7 +519,7 @@ h3.profession .typekita {
     height: 140px;
     width: 140px;
     border-radius: 50%;
-    padding: 3px;
+    padding: 5px;
     background: var(--main-color);
     transition: all 0.3s ease;
 }
@@ -527,7 +529,8 @@ h3.profession .typekita {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid var(--bg-black-100);
+    transition: all 0.3s ease;
 }
 
 .team .team-content .card .icons {
@@ -556,7 +559,8 @@ h3.profession .typekita {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    color: #302e4d;;
+    color: var(--text-black-900);
+    transition: all 0.3s ease;
 }
 
 .team .team-content .card .name-dreamjob .name {
