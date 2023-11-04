@@ -2,17 +2,6 @@ body {
   user-select: none;
 }
 
-/* Container */
-.calendar {
-    width: 100%;
-    max-width: 500px; 
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
 
 /* Go-Back Button */
 .go-back{
@@ -44,6 +33,17 @@ body {
 .go-back .button button:hover {
   background: #120c6e;
   transform: scale(1.08);
+}
+
+/* Container */
+.calendar {
+    width: 100%;
+    max-width: 500px; 
+    margin: 50px auto auto auto;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 
