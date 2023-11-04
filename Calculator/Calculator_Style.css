@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  user-select: none;
   background: linear-gradient(to bottom, #fff, #ddd);
 }
 
