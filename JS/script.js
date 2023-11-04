@@ -97,11 +97,9 @@ function sidebarSectionTogglerBtn() {
 }
 
 //-- TYPING ANIMATION --\\
-/*
 var typed = new Typed(".typekita", {
-    strings: ["", "Uttogs", "Barya Collectors", "Tambays", "Squatters", "Web Developers"],
+    strings: ["", "Web Developers", "Web Designers", "Programmers"],
     typeSpeed: 80,
-    BackSpeed: 60,
+    BackSpeed: 100,
     loop: true
 })
-*/

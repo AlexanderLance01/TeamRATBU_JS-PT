@@ -6,6 +6,8 @@ body {
   margin: 0;
   background: linear-gradient(to bottom, #fff, #ddd);
 }
+
+
  /* Container */
 .calculator {
   background: linear-gradient(to bottom, #555, #333);
@@ -14,6 +16,8 @@ body {
   padding: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+
  /* Screen */
 #display {
   width: 95%;
@@ -27,6 +31,41 @@ body {
   color: #fff;
   padding: 10px;
 }
+
+
+/* Go-Back Button */
+.go-back{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+
+}
+
+.go-back .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.go-back .button button {
+  background: #5372eb;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.go-back .button button:hover {
+  background: #120c6e;
+  transform: scale(1.08);
+}
+
+
  /* Buttons and Actions  */
 .buttons {
   display: grid;
@@ -34,7 +73,7 @@ body {
   gap: 10px;
 }
 
-button {
+.calculator button {
   background: #5c4a4a;
   color: #fff;
   font-size: 20px;
@@ -45,43 +84,43 @@ button {
   transition: background 0.3s, transform 0.1s, box-shadow 0.2s;
 }
 
-button:hover {
+.calculator button:hover {
   background: #444;
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-button:active {
+.calculator button:active {
   transform: scale(0.95);
 }
 
 
-button.operator {
+.calculator button.operator {
   background: #ff9900;
   box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
 }
 
-button.operator:hover {
+.calculator button.operator:hover {
   background: #cc7700;
 }
 
 
-button.equals {
+.calculator button.equals {
   background: #007acc;
   box-shadow: 0 0 10px rgba(0, 120, 204, 0.7);
 }
 
-button.equals:hover {
+.calculator button.equals:hover {
   background: #000;
 }
 
 
-button.clear {
+.calculator button.clear {
   background: #000;
   box-shadow: 0 0 10px rgba(21, 18, 18, 0.8);
 }
 
-button.clear:hover {
+.calculator button.clear:hover {
   background: #100b0b;
 }
 /* pano ba ito */
@@ -90,7 +129,7 @@ button.clear:hover {
     width: 80%; 
   }
 
-  button {
+  .calculator button {
     font-size: 16px; 
   }
 }

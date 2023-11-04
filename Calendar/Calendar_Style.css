@@ -1,3 +1,7 @@
+body {
+  user-select: none;
+}
+
 /* Container */
 .calendar {
     width: 100%;
@@ -7,90 +11,133 @@
     background-color: #f4f4f4;
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Go-Back Button */
+.go-back{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+
+}
+
+.go-back .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.go-back .button button {
+  background: #5372eb;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.go-back .button button:hover {
+  background: #120c6e;
+  transform: scale(1.08);
+}
+
+
+/* head ng calandar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px; 
+}
+
+
+/* 'Previous' at Next Buttons */
+#prevMonth, #nextMonth {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px; 
+}
+
+
+/* Month at year */
+#monthYear {
+  font-size: 16px; 
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+/* head ng table  */
+thead th {
+  background-color: #333;
+  color: #fff;
+  padding: 5px; 
+}
+
+
+/* Calendar cells */
+td {
+  text-align: center;
+  padding: 5px; 
+  font-size: 14px; 
+}
+
+
+/* Style ng selected date */
+td.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+/* Style ng todays date */
+td.today {
+  background-color: #f9a825;
+}
+
+
+/* Style ng past dates */
+td.past {
+  color: #ccc;
+}
+
+
+/* Style ng event dates */
+td.event {
+  background-color: #ffc107;
+  color: #333;
+}
+
+
+/* Hover ng table cells */
+td:hover {
+  background-color: #ddd;
+}
+
+
+.event {
+  font-weight: bold;
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .calendar {
+    max-width: 100%; 
   }
   
-  /* head ng calandar */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px; 
-  }
-  
-  /* 'Previous' at Next Buttons */
-  #prevMonth, #nextMonth {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px; 
-  }
-  
-  /* Month at year */
-  #monthYear {
-    font-size: 16px; 
-  }
-  
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  /* head ng table  */
-  thead th {
-    background-color: #333;
-    color: #fff;
-    padding: 5px; 
-  }
-  
-  /* Calendar cells */
-  td {
-    text-align: center;
-    padding: 5px; 
-    font-size: 14px; 
-  }
-  
-  /* Style ng selected date */
-  td.selected {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  /* Style ng todays date */
-  td.today {
-    background-color: #f9a825;
-  }
-  
-  /* Style ng past dates */
-  td.past {
-    color: #ccc;
-  }
-  
-  /* Style ng event dates */
-  td.event {
-    background-color: #ffc107;
-    color: #333;
-  }
-  
-  /* Hover ng table cells */
-  td:hover {
-    background-color: #ddd;
-  }
-  
-  .event {
-    font-weight: bold;
-    color: red;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .calendar {
-      max-width: 100%; 
-    }
-    
-  }
-  
+}
