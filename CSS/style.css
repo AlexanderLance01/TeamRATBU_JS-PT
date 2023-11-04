@@ -694,7 +694,7 @@ h3.profession .typekita {
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
+    grid-template-rows: 4fr 4fr;
     grid-template-areas:
     "form info"
     "form map";
@@ -760,13 +760,14 @@ h3.profession .typekita {
     transition: all 0.3s ease;
 }
 
-.contact .contact-content .box .form .formBox .inputBox input[type="submit"] {
+.contact .contact-content .box .form .formBox .inputBox button {
     background: var(--main-color);
     color: #fff;
     font-size: 18px;
     max-width: 120px;
     cursor: pointer;
     padding: 14px 15px;
+    border-radius: 10px;
     border: none;
     transition: all 0.5s ease;
 }
