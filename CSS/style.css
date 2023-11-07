@@ -297,6 +297,10 @@ ul {
 
 
 /* HOME SECTION */
+.home::-webkit-scrollbar {
+    display: none;
+}
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -331,19 +335,19 @@ ul {
     max-width: 60%;
 }
 
-h3.hello {
+.home h3.hello {
     font-size: 28px;
     margin: 15px 0;
 }
 
-h3.hello .first {
+.home h3.hello .first {
     font-family: "Rockwell";
     font-size: 50px;
     color: var(--main-color);
     transition: all 0.3s ease;
 }
 
-h3.hello .second {
+.home h3.hello .second {
     font-family: 'Clicker Script', cursive;
     font-size: 50px;
     font-weight: 700;
@@ -352,12 +356,12 @@ h3.hello .second {
 }
 
 
-h3.profession {
+.home h3.profession {
     font-size: 30px;
     margin: 15px 0;
 }
 
-h3.profession .typekita {
+.home h3.profession .typekita {
     font-size: 35px;
     font-weight: 700;
     color: var(--main-color);
@@ -415,6 +419,10 @@ h3.profession .typekita {
 
 
 /* ABOUT SECTION */
+.about::-webkit-scrollbar {
+    display: none;
+}
+
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -467,6 +475,10 @@ h3.profession .typekita {
 
 
 /* TEAM SECTION */
+.team::-webkit-scrollbar {
+    display: none;
+}
+
 .team .team-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -575,6 +587,10 @@ h3.profession .typekita {
 
 
 /* PROJECTS SECTION */
+.projects::-webkit-scrollbar {
+    display: none;
+}
+
 .projects .projects-content {
     flex: 0 0 100%;
     max-width: 100%;
